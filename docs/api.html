@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>WPStocks API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+    body{
+    width: 60%;
+    margin: auto;
+   }
+  </style>
+</head>
+<body>
+<header>
+<h1>WPStocks API</h1></header>
+<section>
+  <h2>http:///[site]/api/? GET</h2>
+  <div class="row">
+     <div class="col-sm-4">stock</div>
+     <div class="col-sm-2">optional</div>
+     <div class="col-sm-6">
+         <p>Stock symbol to get information for. If not supplied then all stock for the current user if any will be retrieved.</p>
+     </div>
+  </div>
+  <div class="row">
+     <div class="col-sm-4">username</div>
+     <div class="col-sm-2">optional</div>
+     <div class="col-sm-6">
+         <p>If supplied then will get stock information for the user matching username.</p>
+     </div>
+  </div>
+  <div class="row">
+     <div class="col-sm-4">from</div>
+     <div class="col-sm-2">optional</div>
+     <div class="col-sm-6">
+         <p>If supplied then will get stock information for a stock from a certain date. If used then the stock parameter must not be empty. Defaults to current date.</p>
+     </div>
+  </div>
+  <div class="row">
+     <div class="col-sm-4">to</div>
+     <div class="col-sm-2">optional</div>
+     <div class="col-sm-6">
+         <p>If supplied then will get stock information for a stock up to a certain date. If used then the stock parameter must not be empty. Defaults to current date.</p>
+     </div>
+  </div>
+  <div class="row">
+     <div class="col-sm-4">frequency</div>
+     <div class="col-sm-2">optional</div>
+     <div class="col-sm-6">
+         <p>Can be "daily", "weekly" or "monthly". Defaults to "daily".</p>
+     </div>
+  </div>
+  <h3>Examples</h3>
+  <p>Get current stock information for stock symbol "APPLE":</p>
+  <p>http://[site]/api/?stock=APPLE</p>
+  <p>Get list of stocks that user "Bob" owns and return current information for each stock:</p>
+  <p>http://[site]/api/?username=Bob</p>
+  <p>Get weekly stock information for "APPLE", from 1 August 2015 to 1 September 2015:</p>
+  <p>http://[site]/api/?stock=APPLE&from=1 August 2015&to=1 September 2015&frequency=weekly</p>
+  <h3>Returns JSON</h3>
+  <code>
+    TODO
+  </code>
+</section>
+<section>
+  <h2>http:///[site]/api/watched? GET</h2>
+  <div class="row">
+     <div class="col-sm-4">username</div>
+     <div class="col-sm-2">required</div>
+     <div class="col-sm-6">
+     </div>
+  </div>
+   <p>Returns all stocks that the user matching username is watching.</p>
+</section>
+<section>
+  <h2>http:///[site]/api/watched? POST</h2>
+  <div class="row">
+     <div class="col-sm-4">username</div>
+     <div class="col-sm-2">required</div>
+     <div class="col-sm-6"></div>
+  </div>
+  <div class="row">
+     <div class="col-sm-4">stock</div>
+     <div class="col-sm-2">required</div>
+     <div class="col-sm-6">Stock symbol</div>
+  </div>
+  <p>Adds a stock to a user's watchlist.
+</section>
+<section>
+  <h2>http:///[site]/api/watched? DELETE</h2>
+  <div class="row">
+     <div class="col-sm-4">username</div>
+     <div class="col-sm-2">required</div>
+     <div class="col-sm-6"></div>
+  </div>
+  <div class="row">
+     <div class="col-sm-4">stock</div>
+     <div class="col-sm-2">required</div>
+     <div class="col-sm-6">Stock symbol</div>
+  </div>
+  <p>Removes a stock to a user's watchlist.
+</section>
+</body>
+</html>

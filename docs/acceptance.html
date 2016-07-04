@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Acceptance documentation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+    body{
+    width: 60%;
+    margin: auto;
+   }
+  </style>
+</head>
+<body>
+<header>
+<h1>WPStocks acceptance doc v0.01</h1>
+</header>
+<ol>
+   <li><a href="#registration">Registration.</a></li>
+   <li><a href="#login">Login.</a></li>
+   <li><a href="#controlpanel">Control panel.</a></li>
+   <li><a href="#api">API.</a></li>
+</ol>
+<section name="registration">
+  <h2>Registering</h2>
+  <p>Test page: <a href="http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=registration"></a>http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=registration</p>
+<table class="table"> 
+                <caption>Registration</caption>
+                <thead>
+                   <tr>
+                      <th>Test</th>
+                      <th>Date</th>
+                      <th>Test page</th>
+                      <th>Expected result</th>
+                      <th>Accepted (Y/N)</th>
+                   </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                      <td>
+			Registration form gives error if required fields are not all filled in.
+		      </td>
+                      <td>12 Oct 2015</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			If email field is not valid then registration form returns an error.
+		      </td>
+                      <td>
+			12 Oct 2015
+		      </td>
+                      <td>
+		      </td>
+                      <td>
+		      </td>
+                      <td>
+		      </td>
+                   </tr>
+                   <tr>
+                      <td>
+			If password and "confirm password" fields don't match then registration form returns error.
+		      </td>
+                      <td>12 Oct 2015</td>
+                      <td></td>
+                      <td>
+		      </td>
+                      <td>
+		      </td>
+                   </tr>
+                   <tr>
+                      <td>
+			If email and "confirm email" fields do't match then registration form returns an error.
+		      </td>
+                      <td>12 Oct 2015</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			If all fields are correct then form is submitted and user is redirected to the login page (does not redirect)
+		      </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                </tbody>
+            </table>
+</section>
+<section name="registrationbyadmin">
+  <h2>Logging in</h2>
+<table class="table"> 
+                <caption>Logging in tests</caption>
+                <thead>
+                   <tr>
+                      <th>Test</th>
+                      <th>Date</th>
+                      <th>Test page</th>
+                      <th>Expected result</th>
+                      <th>Accepted (Y/N)</th>
+                   </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                      <td>
+			After registering user shold be able to login. After logging in they should be taken to the Dashboard page.
+		      </td>
+                      <td>24 Oct 2015</td>
+                      <td>http://premiumwebtechnologies.com/projects/wpstocks/wp-login.php</td>
+                      <td>User is logged in.</td>
+                      <td></td>
+                   </tr>
+                </tbody>
+            </table>
+</section>
+<section name="controlpanel">
+  <h2>Control Panel</h2>
+<table class="table"> 
+                <caption>Control panel tests</caption>
+                <thead>
+                   <tr>
+                      <th>Test</th>
+                      <th>Date</th>
+                      <th>Accepted (Y/N)</th>
+                   </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                      <td>
+			"Dashboard" tab is selected by default.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			On the default page user is shown a clients detail section and an accounts section.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			In the client details section is shown the clients' name, company, address, telephone and fax number.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			In the accounts section is shown the client's accounts
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			User is able to add a new account by clicking on the Add button in the accounts section.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			Each line in the accounts table shows the correct fields.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			Clicking on the portfolio tab shows the user's portfolio.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			Portfolio table shows correct fields and balance.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			Clicking on a stock symbol brings up a window showing graph showing the performance of the stock. User is able to change the graph to show daily, weekly and monthly results.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			Underneath the statement of account table there is a watchlist table showing the stocks the user is watching.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			User can add a stock to his watchlist by clicking on the "Add watch" button and entering a stock symbol
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			User can remove a stock from his watchlist by clicking the "Remove" button for that stock.
+		      </td>
+                      <td></td>
+                      <td></td>
+                   </tr>
+                </tbody>
+            </table>
+</section>
+<section name="API">
+  <h2>API</h2>
+<table class="table"> 
+                <caption>API</caption>
+                <thead>
+                   <tr>
+                      <th>Test</th>
+                      <th>Date</th>
+                      <th>Test page</th>
+                      <th>Expected result</th>
+                      <th>Accepted (Y/N)</th>
+                   </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                      <td width="50%">
+			Visiting http:[site]/api?stock=[stock]&api=barchart&apikey=[apikey] shows latest information about [stock] in json format.
+		      </td>
+                      <td>11 Oct 2015</td>
+                      <td><a href="http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/api/?stock=IBM&api=barchart&apikey=489911a5880b02d7093e260e0158fd39">http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/api/?stock=IBM&api=barchart&apikey=489911a5880b02d7093e260e0158fd39</a>
+</td>
+                      <td>[{"symbol":"IBM","name":"International Business Machines","lastPrice":149.53,"date":"2015-10-13 20:59:50","netChange":-1.61,"percentChange":-1.07,"open":150.52,"high":150.6,"low":149.18,"close":"","volume":202069}]</td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			Visiting http:[site]/api?username=[user]&api=barchart&apikey=[apikey] shows information about all of [user]'s stocks, in json format.
+		      </td>
+                      <td>11 Oct 2015</td>
+                      <td><a href="http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/api/?username=kdavies&api=barchart&apikey=489911a5880b02d7093e260e0158fd39">http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/api/?username=kdavies&api=barchart&apikey=489911a5880b02d7093e260e0158fd</a></td>
+                      <td>No stocks found</td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			Visiting http:[site]/api?stock=[stock]&from=[fromdate]&to=[todate]&api=barchart&apikey=[apikey] shows information about [stock] from [fromdate] to [todate], in json format.
+		      </td>
+                      <td>11 Oct 2015</td>
+                      <td><a href="http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/api/?stock=IBM&from=3 October 2015&to=&api=barchart&apikey=489911a5880b02d7093e260e0158fd39">http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/api/?stock=IBM&from=3 October 2015&to=&api=barchart&apikey=489911a5880b02d7093e260e0158fd39</a></td>
+                      <td>[{"symbol":"IBM","name":"International Business Machines","lastPrice":149.53,"date":"2015-10-13 20:59:50","netChange":-1.61,"percentChange":-1.07,"open":150.52,"high":150.6,"low":149.18,"close":"","volume":202069},{"symbol":"IBM","name":"International Business Machines","lastPrice":"152.39","date":"2015-10-10 02:36:57","netChange":"0.11","percentChange":"0.07","open":"152.46","close":"152.39","low":"151.27","high":"153.15","volume":"3531000"}]</td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			Visiting http:[site]/api/watched?username=[user]&api=barchart&apikey=[apikey] shows information about all the stocks [user] has on his watchlist.
+		      </td>
+                      <td>11 Oct 2015</td>
+                      <td><a href="http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/api/watched/?username=kdavies&api=barchart&apikey=489911a5880b02d7093e260e0158fd39">http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/api/watched/?username=kdavies&api=barchart&apikey=489911a5880b02d7093e260e0158fd39</a></td>
+                      <td>[{"symbol":"IBM","name":"International Business Machines","lastPrice":149.53,"date":"2015-10-13 20:59:50","netChange":-1.61,"percentChange":-1.07,"open":150.52,"high":150.6,"low":149.18,"close":"","volume":202069}]</td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			POSTING to http://[site]/api/watched?username=[user]&stock=[stock] adds [stock] to [user]'s watchlist.
+		      </td>
+                      <td>14 Oct 2015</td>
+                      <td><a href="http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=watchlist-test-page">http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=watchlist-test-page</a>. Add item using the add button and verify using the view button.</td>
+                     <td>When view button is clicked should show the added stock</td>
+                      <td></td>
+                   </tr>
+                   <tr>
+                      <td>
+			Sending DELETE request to http://[site]/api/watched?username=[user]&stock=[stock] removes [stock] from [user]'s watchlist.
+		      </td>
+                      <td>14 Oct 2015</td>
+                      <td><a href="http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=watchlist-test-page">http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=watchlist-test-page</a>. Remove item using the remove button and verify using the view button.</td>
+                      <td>When view button is clicked should not show the removed stock</td>
+                      <td></td>
+                   </tr>
+                </tbody>
+            </table>
+</section>
+<section name="profile">
+  <h2>Profile page</h2>
+  <p>User is able to change your first name, last name, email and address.</p>
+</section>
+</body>
+</html>

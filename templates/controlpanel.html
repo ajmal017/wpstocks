@@ -1,0 +1,134 @@
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="tabbable ">
+	
+        <ul class="nav nav-tabs">
+	  <li class="active"><a href="#tab1" data-toggle="tab" class="ui-link">Dashboard</a></li>
+	  <li id="accountsTab"><a href="#tab2" data-toggle="tab" class="ui-link">Accounts</a></li>
+
+	  <li><a href="#tab3" data-toggle="tab" class="ui-link">Equity</a></li>
+
+	</ul>
+
+	<div class="tab-content">
+	  <div class="tab-pane active" id="tab1">
+
+             <div class="row">
+                  <div class="col-md-4">
+                     <h4><div style="float:right">&nbsp;</div></h4>
+                     <section class="clientdetails">
+                           <p id="clientDetailsContainer">
+                           </p>
+                      </section>
+                  </div>
+
+                  <div class="col-md-8">
+                     <section class="accounts">
+                           <h4><div style="float:right"><a href="#" class="addAccount">+</a></div></h4>     
+                           <p>
+                               <table class="table"> 
+                                  <caption>Accounts</caption>
+                                  <thead>
+                                     <tr>
+                                        <th>Number</th>
+                                        <th>Name</th>
+                                        <th>Balance</th>
+                                     </tr>
+                                  </thead>
+                                  <tbody id="accountsTableBody">
+                                  </tbody>
+                               </table>
+                           </p>				      
+                      </section>
+                  </div>
+
+              </div>  
+
+          </div>
+
+	  <div class="tab-pane" id="tab2">
+
+              <div class="row">
+                 <div class="col-sm-12">
+                    <div id="accountDetailsContainer"></div>
+                 </div>
+              </div>
+
+          </div>
+
+
+	  <div class="tab-pane" id="tab3">
+
+	    <div class="row" id="portfolioPanel">
+             <div class="col-sm-12">
+
+             <table class="table"> 
+                <caption><h3>Portfolio</h3> <div class="pull-right"><button class="button button-info" id="wpstocksPortfolioBuyButton">Buy</button></div></caption>
+                <thead>
+                   <tr>
+                      <th>Account</th>
+                      <th>Symbol</th>
+		      <th>Qty</th>
+		      <th>Price</th>
+		      <th>Amount</th>
+		      <th>Current Value</th>
+		      <th>Profit</th>
+		      <th>Actions</th>
+                   </tr>
+                </thead>
+                <tbody id="wpstocksPortfolioBody">
+                </tbody>
+             </table>
+
+          </div>
+         </div>
+
+
+
+	    <div class="row" id="watchlistPanel">
+             <div class="col-sm-12">
+
+             <table class="table"> 
+                <caption><h3>Watchlist</h3> <div class="pull-right"><button class="button button-info" id="wpstocksWatchlistAddButton">Add Watch</button></div></caption>
+                <thead>
+                   <tr>
+                      <th>Symbol</th>
+                      <th>Name</th>
+		      <th>Current Value</th>
+		      <th>Actions</th>
+                   </tr>
+                </thead>
+                <tbody id="wpstocksWatchlistBody">
+                </tbody>
+             </table>
+
+          </div>
+         </div>
+
+
+	    <div class="row" id="getQuotesPanel" style="display:none;">
+             <div class="col-sm-8">
+             <table class="table"> 
+                <caption><h3>Buy Equity</h3> <div class="pull-right"><button class="button button-info" id="wpstocksGetQuotesGetNewQuoteButton">Get New Quote</button></div></caption>
+                <tbody id="wpstocksBuyEquityTableBody">
+                </tbody>
+             </table>
+            </div><!-- col -->
+
+            <div class="col-sm-4">
+             <table class="table"> 
+                <caption><h3>Stock Quotes</h3> </caption>
+                <tbody id="wpstocksStockQuotesTableBody">
+                </tbody>
+             </table>
+          </div><!-- col -->
+
+         </div><!-- row -->
+
+        </div>
+
+        </div>  
+      </nav>
+    </div>
+  </div>
+

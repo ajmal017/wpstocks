@@ -1,0 +1,71 @@
+.clientdetails
+{
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 10px;
+    min-height:300px;
+}
+
+.clientdetails table tr td:first-child
+{
+}
+
+#wpstocksDepositForm, #wpstocksWithdrawForm{
+    width: 50%;
+}
+
+#wpstocksDepositForm .row, #wpstocksWithdrawForm .row{
+    margin-bottom: 5px;
+}
+
+#accountDetailsContainer td, #portfolioPanel td, #accountDetailsContainer th, #portfolioPanel th
+{
+    text-transform:capitalize;
+}
+
+#accountDetailsContainer td.centered
+{
+    text-align: center !important;
+}
+
+#accountDetailsContainer td.currency, #portfolioPanel td.currency, .accounts td.currency, #accountDetailsContainer th.currency, #portfolioPanel th.currency, .accounts th.currency, #portfolioPanel th.currency, #portfolioPanel td.currency
+{
+    text-align: right;
+}
+
+#accountDetailsContainer td.number, #portfolioPanel td.number, .accounts td.number, #accountDetailsContainer th.number, #portfolioPanel th.number, .accounts th.number, #portfolioPanel th.number. #portfolioPanel th.currency
+{
+    text-align: right;
+}
+
+#clientDetailsContainer table tr td, #accountDetailsContainer table tr td, #accountDetailsContainer table tr th, #portfolioPanel table tr td, #portfolioPanel table tr th, #watchlistPanel table tr td, #watchlistPanel table tr th {
+    padding-left: 0px;
+}
+
+#clientDetailsContainer table tr td:first-child::after {
+    content: "";
+}
+
+.accounts table tr th, .accounts table tr td {
+    padding-left: 0px;
+}
+
+.accounts table tr th:last-child, .accounts table tr td:last-child, #accountDetailsContainer table tr td:last-child, #accountDetailsContainer table tr th:last-child, #portfolioPanel table tr th:last-child, #portfolioPanel table tr td:last-child, #watchlistPanel table tr td:last-child, #watchlistPanel table tr th:last-child {
+    padding-right: 0px;
+    text-align: right;
+}
+
+.wpstocks_footer{
+    margin-top: 20px;
+}
+
+.wpstocks_footer div {
+    border-top: 1px solid red;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+
+.tab-pane {
+    min-height: 500px;
+}

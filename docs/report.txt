@@ -1,0 +1,60 @@
+Test site: http://premiumwebtechnologies.com/projects/wpstocks/wp-admin
+Login using "admin" for username and password.
+
+See also:
+http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/docs/acceptance.html
+http://premiumwebtechnologies.com/projects/wpstocks/wp-content/plugins/wpstocks/docs/api.html
+
+
+
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Dashboard tab
+Time in video: 00:00 - 00:09
+To do: -
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Dashboard tab, click on an Accounts number, Statement tab.
+Time in video: 00:09 - 00:15
+To do: Setting child tab.
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Dashboard tab, click on an Accounts number, click on Deposit tab.
+Time in video: 00:16 - 00:19
+To do: TTNumber does not appear on the Statement page. Date formating.
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Dashboard tab, click on an Accounts number, click on Withdraw tab.
+Time in video: 00:20 - 00:40
+To do: When submit button is clicked show that it has be clicked.
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Equity tab, click Buy button.
+Time in video: 01:34 - 02:25
+To do: Trade should appear in "Waiting list" so that user has the opportunity to cancel.
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Equity tab, click cancel button under "Waiting list"
+Time in video:  02:26 - 02:30
+To do: Waiting list, cancel button.
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Equity tab, click Add Watch button
+Time in video:  02:31 - 02:42
+To do: Dialog window does not disappear.
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Equity tab, click Buy button under "Watchlist"
+Time in video:  02:43 - 03:00
+To do: -
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Profile link.
+Time in video:  04:05 - 04:15
+To do: Add profile link and functionality.
+
+
+Page: http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel, Equity tab, click Remove button under "Watchlist"
+Time in video:  04:16 - 04:19
+To do: -
+

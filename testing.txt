@@ -1,0 +1,116 @@
+Test link: http://premiumwebtechnologies.com/projects/wpstocks/wp-admin
+
+Log in as admin using 'admin' for the username and password.
+
+Click on Users -> Add New
+
+Fill in the fields and click on the 'Add New User' button. Make sure that role "WPStocks" is selected.
+
+In the next page that appears, under the new user, click on 'Edit'.
+
+At the bottom of the page click on the 'Go to Control Panel' link. This should take you to the control panel page for the user you just created.
+
+Create an account for the user by clicking on the "+" button.
+
+Add funds by clicking on the Accounts tab and then clicking on "Deposit" (only admin can do this).
+
+Click on the Equity tab.
+
+Click on the "Buy" button.
+
+Enter a ticker code eg "IBM"
+
+Select the account by clicking on the radio button that appears and then click on "Open Position".
+
+Log out.
+
+Login in as the new user.
+
+http://premiumwebtechnologies.com/projects/wpstocks/?wpstocks_page=control-panel&userId=7
+
+
+
+Slides
+
+001 ADD USER1.png
+Remove "Client Details" heading from control panel.
+Split Address into different fields
+
+002 ADD USER2.png
+"Email (required)" field cannot be removed as it is rendered by Wordpress.
+"Website" field cannot be remove as it is rendered by Wordpress.
+"Roles" are supplied by Wordpress.
+Capitalized "fax"
+Added new phone fields.
+
+004 USER ADDED INFO1.png
+Keyboard and shortcuts are Wordpress features.
+Role is a wordpress feature.
+Company logo added
+"Nickname (required)" is a Wordpress field.
+
+005 USER ADDED INFO2.png
+"Website" is added by Wordpress
+"Biographical Info" is added by Wordpress.
+Fields added for secondary email address, mob phone, home phone etc.
+Capitalized "fax"
+
+006 USER ADDED INFO3.png
+Capitalized "address"
+"Go to Control Panel" takes user to the control panel for the selected user. Control panel is read-only unless logged in as admin..
+
+007 ACCOUNT PAGE1.png
+"+" allows admin user to add an account from the control panel.
+Fixed company field.
+Added address, fax, phone etc fields.
+
+008 ACCOUNT PAGE1B.png
+Removed '$' and added currency code.
+Removed "Number" column.
+Formatted currency fields (todo: check)
+
+009 ADD FUNDS1.png
+User can see "Deposit" form but cannot submit the form unless admin.
+todo: Allow user to enter amount with currency eg 100 USD
+
+010 ADD FUNDS2.png
+Centered total.
+Fixed margins.
+Transaction is a deposit if the credit field has value.
+
+011 EQUITY1.png
+User can add stocks to portfolio by clicking on the buy button. User must be admin to do this.
+User can add watches to watchlist by clicking on the add watch button. User must be admin to do this.
+todo add buy sell columns to watchlist table.
+
+USER SCREENSHOT.png
+Removed "Control panel" heading.
+
+
+001 02 JUL 2016 ADD NEW.png
+Changed "Second Email" label to "Secondary Email"
+
+005 02 JUL 2016 EDIT USER (3).png
+Not able to recreate. Might have been a caching problem.
+
+006 Control panel (1).png
+Fixed. The footer can be changed by editing the WP Stocks "Footer" page from within the admin area.
+
+007 Control panel (2).png
+Set min height of tab pane to 500px. See styles/app.css.
+
+008 Control panel (3).png
+Done. See styles/app.css
+
+009 Control panel (4) ACCOUNT ADDED.png
+Fixed row.
+
+
+
+
+
+
+
+
+
+
